@@ -90,8 +90,6 @@
 				C7CDE68E20A19C4000BE61C6 /* UIColor+ColorHex.m */,
 				C7CDE68F20A19C4000BE61C6 /* UIView+Extension.h */,
 				C7CDE69020A19C4000BE61C6 /* UIView+Extension.m */,
-				C7CDE6A020A19EA900BE61C6 /* AppDelegate+LT.h */,
-				C7CDE6A120A19EA900BE61C6 /* AppDelegate+LT.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -216,6 +214,8 @@
 				C7CDE68D20A19C2800BE61C6 /* Extension */,
 				C7D3B9E020A171AD00591949 /* AppDelegate.h */,
 				C7D3B9E120A171AD00591949 /* AppDelegate.m */,
+				C7CDE6A020A19EA900BE61C6 /* AppDelegate+LT.h */,
+				C7CDE6A120A19EA900BE61C6 /* AppDelegate+LT.m */,
 				C7CDE69220A19C4100BE61C6 /* PrefixHeader.pch */,
 				C7D3B9E920A171AD00591949 /* Assets.xcassets */,
 				C7D3B9EB20A171AD00591949 /* LaunchScreen.storyboard */,
