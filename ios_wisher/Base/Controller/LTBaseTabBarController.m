@@ -34,7 +34,7 @@
 
 //创建控制器
 + (instancetype)addChildVc:(NSArray *)childVcs titles:(NSArray *)titles images:(NSArray *)images selectedImages:(NSArray *)selectedImages{
-    LTBaseTabBarController *tabVC = [LTBaseTabBarController new];
+    LTBaseTabBarController *tabVC = [LTBaseTabBarController sharedController];
     for (int i = 0; i < childVcs.count; i++) {
         UIViewController *vc = [NSClassFromString(childVcs[i]) new];
         LTBaseNavigationController *nav = [[LTBaseNavigationController alloc] initWithRootViewController:vc];
