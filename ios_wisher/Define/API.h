@@ -9,7 +9,7 @@
 #ifndef API_h
 #define API_h
 
-#define prefixUrl @"http://appv2.baoshou.net"
+#define prefixUrl @""
 
 #define urlAppend(subUrl) [NSString stringWithFormat:@"%@/%@", prefixUrl, subUrl]
 
