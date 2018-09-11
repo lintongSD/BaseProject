@@ -10,10 +10,23 @@
 
 @implementation UIColor (ColorHex)
 
-+ (UIColor *)randomColor{
-    return [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1.0];
+#pragma mark ---- 常用颜色
++ (UIColor *)lineColor{
+    return [UIColor lt_colorWithHexString:@"#ECECEC"];
 }
 
++ (UIColor *)lt_defaultBgColor{
+    return [UIColor lt_colorWithHexString:@"#F0F0F0"];
+}
++ (UIColor *)lt_themeColor{
+    return [UIColor lt_colorWithHexString:@"#006BFF"];
+}
+#pragma mark ---- 项目颜色宏
++ (UIColor *)lt_secodTextColor{
+    return [UIColor lt_colorWithHexString:@"#B6B5B5"];
+}
+
+#pragma mark ---- 颜色配置
 + (UIColor *)lt_colorWithHexString: (NSString *)color{
     NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     
@@ -43,5 +56,9 @@
     [[NSScanner scannerWithString:bString] scanHexInt:&b];
     
     return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
+}
+
++ (UIColor *)randomColor{
+    return [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1.0];
 }
 @end

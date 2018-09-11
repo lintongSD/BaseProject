@@ -164,5 +164,4 @@
     
     self.layer.mask = shape;
 }
-
 @end

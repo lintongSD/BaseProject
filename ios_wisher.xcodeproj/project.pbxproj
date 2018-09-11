@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1F8193F56C90A80E545D3C04 /* libPods-ios_wisher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14165FD940689ABA538918CF /* libPods-ios_wisher.a */; };
+		41FC5E112147BF1E0004AE35 /* LTLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FC5E0E2147BF1E0004AE35 /* LTLoginController.m */; };
+		41FC5E142147BF4A0004AE35 /* LTBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FC5E132147BF4A0004AE35 /* LTBaseModel.m */; };
+		41FC5E1A2147C00D0004AE35 /* LTNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FC5E172147C00D0004AE35 /* LTNetworkManager.m */; };
+		41FC5E1B2147C00D0004AE35 /* LTNetworkResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FC5E192147C00D0004AE35 /* LTNetworkResult.m */; };
 		C7CDE69320A19C4100BE61C6 /* UIColor+ColorHex.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CDE68E20A19C4000BE61C6 /* UIColor+ColorHex.m */; };
 		C7CDE69420A19C4100BE61C6 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CDE69020A19C4000BE61C6 /* UIView+Extension.m */; };
 		C7CDE69C20A19DF900BE61C6 /* LTBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CDE69B20A19DF900BE61C6 /* LTBaseController.m */; };
@@ -27,13 +31,24 @@
 
 /* Begin PBXFileReference section */
 		14165FD940689ABA538918CF /* libPods-ios_wisher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios_wisher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41FC5E0D2147BF1E0004AE35 /* LTLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLoginController.h; sourceTree = "<group>"; };
+		41FC5E0E2147BF1E0004AE35 /* LTLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLoginController.m; sourceTree = "<group>"; };
+		41FC5E122147BF4A0004AE35 /* LTBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTBaseModel.h; sourceTree = "<group>"; };
+		41FC5E132147BF4A0004AE35 /* LTBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTBaseModel.m; sourceTree = "<group>"; };
+		41FC5E162147C00D0004AE35 /* LTNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTNetworkManager.h; sourceTree = "<group>"; };
+		41FC5E172147C00D0004AE35 /* LTNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTNetworkManager.m; sourceTree = "<group>"; };
+		41FC5E182147C00D0004AE35 /* LTNetworkResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTNetworkResult.h; sourceTree = "<group>"; };
+		41FC5E192147C00D0004AE35 /* LTNetworkResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTNetworkResult.m; sourceTree = "<group>"; };
+		41FC5E1D2147C0DB0004AE35 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		41FC5E1E2147C0DB0004AE35 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		41FC5E1F2147C0DB0004AE35 /* NotificationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationMacro.h; sourceTree = "<group>"; };
+		41FC5E202147C0DB0004AE35 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		61C3EC44B32E7DB75FB67D0A /* Pods-ios_wisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_wisher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios_wisher/Pods-ios_wisher.debug.xcconfig"; sourceTree = "<group>"; };
 		789B3F20F5AE91CF8D928F6D /* Pods-ios_wisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_wisher.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios_wisher/Pods-ios_wisher.release.xcconfig"; sourceTree = "<group>"; };
 		C7CDE68E20A19C4000BE61C6 /* UIColor+ColorHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorHex.m"; sourceTree = "<group>"; };
 		C7CDE68F20A19C4000BE61C6 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		C7CDE69020A19C4000BE61C6 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		C7CDE69120A19C4000BE61C6 /* UIColor+ColorHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorHex.h"; sourceTree = "<group>"; };
-		C7CDE69220A19C4100BE61C6 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C7CDE69A20A19DF900BE61C6 /* LTBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBaseController.h; sourceTree = "<group>"; };
 		C7CDE69B20A19DF900BE61C6 /* LTBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBaseController.m; sourceTree = "<group>"; };
 		C7CDE69D20A19E3100BE61C6 /* LTBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBaseNavigationController.h; sourceTree = "<group>"; };
@@ -48,7 +63,6 @@
 		C7CDE6AD20A1A27A00BE61C6 /* LTDynamicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTDynamicController.m; sourceTree = "<group>"; };
 		C7CDE6AF20A1A28500BE61C6 /* LTMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTMineController.h; sourceTree = "<group>"; };
 		C7CDE6B020A1A28500BE61C6 /* LTMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTMineController.m; sourceTree = "<group>"; };
-		C7CDE6B220A1F52900BE61C6 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		C7CDE6B420A288D900BE61C6 /* LTTipsButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTTipsButton.h; sourceTree = "<group>"; };
 		C7CDE6B520A288D900BE61C6 /* LTTipsButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTTipsButton.m; sourceTree = "<group>"; };
 		C7CDE6B820A28B6A00BE61C6 /* LTGetCurrentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTGetCurrentVC.h; sourceTree = "<group>"; };
@@ -74,6 +88,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41FC5E0B2147BF1E0004AE35 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				41FC5E0C2147BF1E0004AE35 /* Controller */,
+				41FC5E0F2147BF1E0004AE35 /* Model */,
+				41FC5E102147BF1E0004AE35 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		41FC5E0C2147BF1E0004AE35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41FC5E0D2147BF1E0004AE35 /* LTLoginController.h */,
+				41FC5E0E2147BF1E0004AE35 /* LTLoginController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41FC5E0F2147BF1E0004AE35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41FC5E102147BF1E0004AE35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41FC5E152147C00D0004AE35 /* NetTool */ = {
+			isa = PBXGroup;
+			children = (
+				41FC5E162147C00D0004AE35 /* LTNetworkManager.h */,
+				41FC5E172147C00D0004AE35 /* LTNetworkManager.m */,
+				41FC5E182147C00D0004AE35 /* LTNetworkResult.h */,
+				41FC5E192147C00D0004AE35 /* LTNetworkResult.m */,
+			);
+			path = NetTool;
+			sourceTree = "<group>";
+		};
+		41FC5E1C2147C0DB0004AE35 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				41FC5E1D2147C0DB0004AE35 /* API.h */,
+				41FC5E1E2147C0DB0004AE35 /* Config.h */,
+				41FC5E1F2147C0DB0004AE35 /* NotificationMacro.h */,
+				41FC5E202147C0DB0004AE35 /* PrefixHeader.pch */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
 		4CA2B58627CEF2A0AB68BCC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +154,6 @@
 		C7CDE68D20A19C2800BE61C6 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C7CDE6B220A1F52900BE61C6 /* Config.h */,
 				C7CDE69120A19C4000BE61C6 /* UIColor+ColorHex.h */,
 				C7CDE68E20A19C4000BE61C6 /* UIColor+ColorHex.m */,
 				C7CDE68F20A19C4000BE61C6 /* UIView+Extension.h */,
@@ -99,7 +167,6 @@
 			children = (
 				C7CDE69720A19D9D00BE61C6 /* Model */,
 				C7CDE69820A19DA700BE61C6 /* View */,
-				C7CDE69920A19DB300BE61C6 /* ViewModel */,
 				C7CDE69620A19D8F00BE61C6 /* Controller */,
 			);
 			path = Base;
@@ -121,6 +188,8 @@
 		C7CDE69720A19D9D00BE61C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				41FC5E122147BF4A0004AE35 /* LTBaseModel.h */,
+				41FC5E132147BF4A0004AE35 /* LTBaseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,13 +199,6 @@
 			children = (
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		C7CDE69920A19DB300BE61C6 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C7CDE6A620A1A23100BE61C6 /* Mine */ = {
@@ -169,6 +231,7 @@
 		C7CDE6B320A2863200BE61C6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				41FC5E152147C00D0004AE35 /* NetTool */,
 				C7CDE6B720A28A9B00BE61C6 /* UITools */,
 			);
 			path = Tools;
@@ -206,17 +269,18 @@
 		C7D3B9DF20A171AD00591949 /* ios_wisher */ = {
 			isa = PBXGroup;
 			children = (
+				41FC5E0B2147BF1E0004AE35 /* Login */,
 				C7CDE6A820A1A24C00BE61C6 /* Home */,
 				C7CDE6A720A1A24100BE61C6 /* Dynamic */,
 				C7CDE6A620A1A23100BE61C6 /* Mine */,
 				C7CDE69520A19D8500BE61C6 /* Base */,
 				C7CDE6B320A2863200BE61C6 /* Tools */,
 				C7CDE68D20A19C2800BE61C6 /* Extension */,
+				41FC5E1C2147C0DB0004AE35 /* Define */,
 				C7D3B9E020A171AD00591949 /* AppDelegate.h */,
 				C7D3B9E120A171AD00591949 /* AppDelegate.m */,
 				C7CDE6A020A19EA900BE61C6 /* AppDelegate+LT.h */,
 				C7CDE6A120A19EA900BE61C6 /* AppDelegate+LT.m */,
-				C7CDE69220A19C4100BE61C6 /* PrefixHeader.pch */,
 				C7D3B9E920A171AD00591949 /* Assets.xcassets */,
 				C7D3B9EB20A171AD00591949 /* LaunchScreen.storyboard */,
 				C7D3B9EE20A171AD00591949 /* Info.plist */,
@@ -352,7 +416,9 @@
 			files = (
 				C7CDE6A520A19F8500BE61C6 /* LTBaseTabBarController.m in Sources */,
 				C7CDE69420A19C4100BE61C6 /* UIView+Extension.m in Sources */,
+				41FC5E1A2147C00D0004AE35 /* LTNetworkManager.m in Sources */,
 				C7CDE6AB20A1A26100BE61C6 /* LTHomeController.m in Sources */,
+				41FC5E142147BF4A0004AE35 /* LTBaseModel.m in Sources */,
 				C7CDE69F20A19E3100BE61C6 /* LTBaseNavigationController.m in Sources */,
 				C7CDE6A220A19EA900BE61C6 /* AppDelegate+LT.m in Sources */,
 				C7CDE6BA20A28B6A00BE61C6 /* LTGetCurrentVC.m in Sources */,
@@ -361,7 +427,9 @@
 				C7CDE6AE20A1A27A00BE61C6 /* LTDynamicController.m in Sources */,
 				C7D3B9F020A171AD00591949 /* main.m in Sources */,
 				C7CDE69C20A19DF900BE61C6 /* LTBaseController.m in Sources */,
+				41FC5E112147BF1E0004AE35 /* LTLoginController.m in Sources */,
 				C7CDE6B620A288D900BE61C6 /* LTTipsButton.m in Sources */,
+				41FC5E1B2147C00D0004AE35 /* LTNetworkResult.m in Sources */,
 				C7D3B9E220A171AD00591949 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,7 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/ios_wisher/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ios_wisher/Define/PrefixHeader.pch";
 				INFOPLIST_FILE = ios_wisher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lin-tong.ios-wisher";
@@ -505,7 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/ios_wisher/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ios_wisher/Define/PrefixHeader.pch";
 				INFOPLIST_FILE = ios_wisher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lin-tong.ios-wisher";
