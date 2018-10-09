@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F8193F56C90A80E545D3C04 /* libPods-ios_wisher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14165FD940689ABA538918CF /* libPods-ios_wisher.a */; };
+		419782C1216CAA9600D178E5 /* LTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419782C0216CAA9600D178E5 /* LTWebViewController.m */; };
+		419782C4216CB5CD00D178E5 /* LTDirectionBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 419782C3216CB5CD00D178E5 /* LTDirectionBtn.m */; };
 		41FC5E112147BF1E0004AE35 /* LTLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FC5E0E2147BF1E0004AE35 /* LTLoginController.m */; };
 		41FC5E142147BF4A0004AE35 /* LTBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FC5E132147BF4A0004AE35 /* LTBaseModel.m */; };
 		41FC5E1A2147C00D0004AE35 /* LTNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FC5E172147C00D0004AE35 /* LTNetworkManager.m */; };
@@ -31,6 +33,10 @@
 
 /* Begin PBXFileReference section */
 		14165FD940689ABA538918CF /* libPods-ios_wisher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios_wisher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		419782BF216CAA9600D178E5 /* LTWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTWebViewController.h; sourceTree = "<group>"; };
+		419782C0216CAA9600D178E5 /* LTWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTWebViewController.m; sourceTree = "<group>"; };
+		419782C2216CB5CD00D178E5 /* LTDirectionBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTDirectionBtn.h; sourceTree = "<group>"; };
+		419782C3216CB5CD00D178E5 /* LTDirectionBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTDirectionBtn.m; sourceTree = "<group>"; };
 		41FC5E0D2147BF1E0004AE35 /* LTLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLoginController.h; sourceTree = "<group>"; };
 		41FC5E0E2147BF1E0004AE35 /* LTLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLoginController.m; sourceTree = "<group>"; };
 		41FC5E122147BF4A0004AE35 /* LTBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTBaseModel.h; sourceTree = "<group>"; };
@@ -181,6 +187,8 @@
 				C7CDE69E20A19E3100BE61C6 /* LTBaseNavigationController.m */,
 				C7CDE6A320A19F8500BE61C6 /* LTBaseTabBarController.h */,
 				C7CDE6A420A19F8500BE61C6 /* LTBaseTabBarController.m */,
+				419782BF216CAA9600D178E5 /* LTWebViewController.h */,
+				419782C0216CAA9600D178E5 /* LTWebViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -242,6 +250,8 @@
 			children = (
 				C7CDE6B420A288D900BE61C6 /* LTTipsButton.h */,
 				C7CDE6B520A288D900BE61C6 /* LTTipsButton.m */,
+				419782C2216CB5CD00D178E5 /* LTDirectionBtn.h */,
+				419782C3216CB5CD00D178E5 /* LTDirectionBtn.m */,
 				C7CDE6B820A28B6A00BE61C6 /* LTGetCurrentVC.h */,
 				C7CDE6B920A28B6A00BE61C6 /* LTGetCurrentVC.m */,
 			);
@@ -423,8 +433,10 @@
 				C7CDE6A220A19EA900BE61C6 /* AppDelegate+LT.m in Sources */,
 				C7CDE6BA20A28B6A00BE61C6 /* LTGetCurrentVC.m in Sources */,
 				C7CDE6B120A1A28500BE61C6 /* LTMineController.m in Sources */,
+				419782C4216CB5CD00D178E5 /* LTDirectionBtn.m in Sources */,
 				C7CDE69320A19C4100BE61C6 /* UIColor+ColorHex.m in Sources */,
 				C7CDE6AE20A1A27A00BE61C6 /* LTDynamicController.m in Sources */,
+				419782C1216CAA9600D178E5 /* LTWebViewController.m in Sources */,
 				C7D3B9F020A171AD00591949 /* main.m in Sources */,
 				C7CDE69C20A19DF900BE61C6 /* LTBaseController.m in Sources */,
 				41FC5E112147BF1E0004AE35 /* LTLoginController.m in Sources */,

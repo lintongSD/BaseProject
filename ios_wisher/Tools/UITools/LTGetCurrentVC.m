@@ -67,7 +67,7 @@
     if ([deviceModel isEqualToString:@"iPhone9,3"])    return @"iPhone 7 (GSM)";
     if ([deviceModel isEqualToString:@"iPhone9,2"])    return @"iPhone 7 Plus (CDMA)";
     if ([deviceModel isEqualToString:@"iPhone9,4"])    return @"iPhone 7 Plus (GSM)";
-    if ([deviceModel isEqualToString:@"iPhone10,3"] || [deviceModel isEqualToString:@"iPhone10,6"])
+    if ([deviceModel isEqualToString:@"iPhone10,3"] || [deviceModel isEqualToString:@"iPhone10,6"]||[deviceModel isEqualToString:@"x86_64"])
         return @"iPhone X" ;
     //iPod 系列/*||[deviceModel isEqualToString:@"x86_64"]*/
     if ([deviceModel isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";

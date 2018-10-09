@@ -11,7 +11,7 @@
 
 @interface LTBaseTabBarController ()
 /** 记录前一次选中的按钮 */
-@property (nonatomic, strong) LTTipsButton *selectLastBtn;
+@property (nonatomic, strong) LTDirectionBtn *selectLastBtn;
 
 @property (nonatomic, strong) UITapGestureRecognizer *tapTouch;/**<  动态双击返回顶部的手势 */
 
@@ -26,7 +26,6 @@
     dispatch_once(&onceToken, ^{
         x = [[LTBaseTabBarController alloc] init];
     });
-    
     
     return x;
 }
@@ -62,7 +61,9 @@
     UIViewController *currentVc = currentNav.topViewController;
     if (_tabBarView &&
         ([currentVc isKindOfClass:NSClassFromString(@"LTHomeController")]||
-         [currentVc isKindOfClass:NSClassFromString(@"LTDynamicController")]||
+         [currentVc isKindOfClass:NSClassFromString(@"LTFindCustomerController")]||
+         [currentVc isKindOfClass:NSClassFromString(@"LTFindProductController")]||
+         [currentVc isKindOfClass:NSClassFromString(@"LTGetMoneyController")]||
          [currentVc isKindOfClass:NSClassFromString(@"LTMineController")])) {
             _tabBarView.frame = CGRectMake(0,self.view.frame.size.height-49 , kScreenW, 49);
         }
@@ -71,7 +72,7 @@
 //创建按钮
 - (void)creatButtonWithNormalName:(NSString *)normal andSelectName:(NSString *)selected andTitle:(NSString *)title andTag:(int)tag andIndex:(NSInteger)index{
     
-    LTTipsButton * customButton = [LTTipsButton buttonWithType:UIButtonTypeCustom];
+    LTDirectionBtn * customButton = [LTDirectionBtn directionBtnWithType:DirectionBtnTypeTop margin:3];
     customButton.tag = tag;
     NSInteger count = index;
     CGFloat buttonW = _tabBarView.frame.size.width /  count;
@@ -83,7 +84,7 @@
     [customButton setImage:[UIImage imageNamed:selected] forState:UIControlStateDisabled];
     [customButton setTitle:title forState:UIControlStateNormal];
     [customButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
-    [customButton setTitleColor:[UIColor lt_colorWithHexString:@"#FF6836"] forState:UIControlStateDisabled];
+    [customButton setTitleColor:themeColor forState:UIControlStateDisabled];
     [customButton addTarget:self action:@selector(changeViewController:) forControlEvents:UIControlEventTouchDown];
     customButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
     customButton.titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -152,7 +153,7 @@
 }
 
 #pragma mark 按钮被点击时调用
-- (void)changeViewController:(LTTipsButton *)sender{
+- (void)changeViewController:(LTDirectionBtn *)sender{
     sender.enabled = NO;
     if (_selectLastBtn != sender) {
         _selectLastBtn.enabled = YES;
@@ -166,13 +167,8 @@
     self.tabBar.hidden = YES;
     CGFloat tabBarViewY;
     CGFloat tabBarViewHeight;
-    if (iphoneX) {
-        tabBarViewY = self.view.frame.size.height - 49 - 34;
-        tabBarViewHeight = 49+34;
-    }else {
-        tabBarViewY = self.view.frame.size.height - 49;
-        tabBarViewHeight = 49;
-    }
+    tabBarViewY = self.view.frame.size.height - 49 - safeAreaHeight;
+    tabBarViewHeight = 49+safeAreaHeight;
     _tabBarView = [[UIView alloc]initWithFrame:CGRectMake(0, tabBarViewY, kScreenW, tabBarViewHeight)];
     UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, 0.6)];
     line.backgroundColor = [UIColor blackColor];
@@ -180,7 +176,7 @@
     [_tabBarView addSubview:line];
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(kScreenW/2, 0, kScreenW/4, tabBarViewHeight)];
     [_tabBarView addSubview:view];
-//    [view addGestureRecognizer:self.tapTouch];
+    //    [view addGestureRecognizer:self.tapTouch];
     _tabBarView.userInteractionEnabled = YES;
     _tabBarView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_tabBarView];
@@ -191,8 +187,8 @@
 //单例
 - (UITapGestureRecognizer *)tapTouch {
     if (!_tapTouch) {
-//        _tapTouch = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTap)];
-//        _tapTouch.numberOfTapsRequired = 2;
+        //        _tapTouch = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTap)];
+        //        _tapTouch.numberOfTapsRequired = 2;
     }
     return _tapTouch;
 }

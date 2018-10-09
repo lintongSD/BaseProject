@@ -28,7 +28,7 @@
 
 //   常用控件
 #import "LTTipsButton.h"
-
+#import "LTDirectionBtn.h"
 
 
 #endif /* PrefixHeader_pch */
